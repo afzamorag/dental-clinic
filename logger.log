@@ -1,0 +1,1 @@
+[2023-07-01 15:26:20] [ INFO ] [PatientService:40] Call method savePatient() of Class Patient, args: {Patient{id=null, name='SALOME ISABEL', lastName='ZAMORA LEON', idNumber='998763PH', dateRegister=2021-06-20, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@151d3ee3, email='si.zamoral@gmail.com'}}
