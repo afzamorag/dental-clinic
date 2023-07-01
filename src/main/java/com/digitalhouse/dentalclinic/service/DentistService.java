@@ -46,8 +46,8 @@ public class DentistService {
         repository.deleteById(id);;
     }
 
-    public List<Dentist> findAll(){
-        return repository.findAll();
+    public Optional<List<Dentist>> findAll(){
+        return Optional.of(repository.findAll());
     }
 }
 

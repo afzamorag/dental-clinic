@@ -25,14 +25,15 @@ public class PatientController {
         logger.info("Call method findAll() of Class Patient, params: {}");
         try{
             Optional<List<Patient>> list = service.findAll();
-            if(!list.isEmpty()){
+            if(list.get().size() > 0){
                 return ResponseEntity.ok(list.get());
             }else{
                 logger.warn("Call method findAll() of Class Patient ResourceNotFoundException");
                 throw new ResourceNotFoundException("No existen pacientes registrados en el sistema");
             }
-        }catch(Exception ex){
-            logger.error("Call method findAll() of Class Patient, Exception: " + ex.getMessage());
+        }catch(ResourceNotFoundException ex){
+            throw new ResourceNotFoundException(ex.getMessage());
+        }catch (Exception ex){
             throw new Exception(ex.getMessage());
         }
     }
@@ -176,12 +177,14 @@ public class PatientController {
 
     @PostMapping("/delete/{id}")
     public void delete(@PathVariable Long id) throws Exception{
+        logger.info("Call method update() of Class delete, params: {" + id + "}");
         try{
             Optional<Patient> selected = service.findById(id);
             if(selected.isPresent()){
                 logger.warn("Patient to delete, params{id: " + id + "}");
                 service.delete(id);
             }else{
+                logger.error("Call method delete() of Class Patient BadRequestException, params{" + id + "}");
                 throw new ResourceNotFoundException("Paciente no existe con la identificación indicada");
             }
         }catch (Exception ex){

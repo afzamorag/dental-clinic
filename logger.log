@@ -1,1 +1,21 @@
 [2023-07-01 15:26:20] [ INFO ] [PatientService:40] Call method savePatient() of Class Patient, args: {Patient{id=null, name='SALOME ISABEL', lastName='ZAMORA LEON', idNumber='998763PH', dateRegister=2021-06-20, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@151d3ee3, email='si.zamoral@gmail.com'}}
+[2023-07-01 16:35:57] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-01 16:37:30] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-01 16:43:32] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-01 16:46:02] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-01 16:51:05] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-01 16:54:39] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-01 16:55:05] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-01 16:55:05] [ ERROR] [PatientService:35] Call method findAll() of Class Patient, Exception: No existen pacientes registrados en el sistema
+[2023-07-01 16:59:22] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-01 16:59:26] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-01 16:59:31] [ ERROR] [PatientService:35] Call method findAll() of Class Patient, Exception: No existen pacientes registrados en el sistema
+[2023-07-01 17:02:06] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-01 17:02:09] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-01 17:02:13] [ ERROR] [PatientService:35] Call method findAll() of Class Patient, Exception: No existen pacientes registrados en el sistema
+[2023-07-01 17:03:33] [ INFO ] [PatientService:44] Call method savePatient() of Class Patient, params: {Patient{id=null, name='SALOME ISABEL', lastName='ZAMORA LEON', idNumber='998763PH', dateRegister=2021-06-20, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@4b65ab14, email='si.zamoral@gmail.com'}}
+[2023-07-01 17:03:44] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-01 17:03:49] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-01 17:04:01] [ ERROR] [PatientService:35] Call method findAll() of Class Patient, Exception: No existen pacientes registrados en el sistema
+[2023-07-01 17:05:43] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-01 17:05:51] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
