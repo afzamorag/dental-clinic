@@ -76,90 +76,116 @@ public class DentistController {
         }
     }
     @GetMapping("/name/{name}")
-    public ResponseEntity<Dentist> findByName(@PathVariable String name){
+    public ResponseEntity<Dentist> findByName(@PathVariable String name) throws Exception{
         logger.info("Call method findByName() of Class Dentist, params: {" + name + "}");
         try{
-
-        }catch(Exception ex){
-
+            Optional<Dentist> DentistLocal = service.findByName(name);
+            if(DentistLocal.isPresent()){
+                return ResponseEntity.ok(DentistLocal.get());
+            }else{
+                logger.error("Call method findByName() of Class Dentist BadRequestException, params{" + name + "}");
+                throw new ResourceNotFoundException("Odontologo no existe con el nombre indicado");
+            }
+        }catch(ResourceNotFoundException ex) {
+            throw new Exception(ex.getMessage());
         }
-
-        Optional<Dentist> DentistLocal = service.findByName(name);
-        if(DentistLocal.isPresent()){
-            return ResponseEntity.ok(DentistLocal.get());
-        }else{
-            return ResponseEntity.notFound().build();
+        catch(Exception ex){
+            logger.error("Call method findByName() of Class Dentist:" + ex.getMessage());
+            throw new Exception(ex.getMessage());
         }
     }
     @GetMapping("/lastname/{lastName}")
-    public ResponseEntity<Dentist> findByLastName(@PathVariable String lastName){
+    public ResponseEntity<Dentist> findByLastName(@PathVariable String lastName) throws Exception{
         logger.info("Call method findByLastName() of Class Dentist, params: {" + lastName + "}");
         try{
-
+            Optional<Dentist> DentistLocal = service.findByLastName(lastName);
+            if(DentistLocal.isPresent()){
+                return ResponseEntity.ok(DentistLocal.get());
+            }else{
+                logger.error("Call method findByLastName() of Class Dentist BadRequestException, params{" + lastName + "}");
+                throw new ResourceNotFoundException("Odontologo no existe con el apellido indicado");
+            }
+        }catch(ResourceNotFoundException ex){
+            throw new Exception(ex.getMessage());
         }catch(Exception ex){
-
-        }
-
-        Optional<Dentist> DentistLocal = service.findByLastName(lastName);
-        if(DentistLocal.isPresent()){
-            return ResponseEntity.ok(DentistLocal.get());
-        }else{
-            return ResponseEntity.notFound().build();
+            logger.error("Call method findByLastName() of Class Dentist:" + ex.getMessage());
+            throw new Exception(ex.getMessage());
         }
     }
     @GetMapping("/{name}/lastname/{lastName}")
-    public ResponseEntity<Dentist> findByNameAndLastName(@PathVariable("name") String name, @PathVariable("lastName") String lastName){
+    public ResponseEntity<Dentist> findByNameAndLastName(@PathVariable("name") String name, @PathVariable("lastName") String lastName) throws Exception{
         logger.info("Call method findByNameAndLastName() of Class Dentist, params: {" + name + ", " + lastName + "}");
         try{
-
+            Optional<Dentist> DentistLocal = service.findByNameAndLastName(name, lastName);
+            if(DentistLocal.isPresent()){
+                return ResponseEntity.ok(DentistLocal.get());
+            }else{
+                logger.error("Call method findByNameAndLastName() of Class Dentist BadRequestException, params{" + name + ", " + lastName + "}");
+                throw new ResourceNotFoundException("Odontologo no existe con el nombre y apellido indicado");
+            }
+        }catch(ResourceNotFoundException ex){
+            throw new Exception(ex.getMessage());
         }catch(Exception ex){
-
-        }
-
-        Optional<Dentist> DentistLocal = service.findByNameAndLastName(name, lastName);
-        if(DentistLocal.isPresent()){
-            return ResponseEntity.ok(DentistLocal.get());
-        }else{
-            return ResponseEntity.notFound().build();
+            logger.error("Call method findByNameAndLastName() of Class Dentist:" + ex.getMessage());
+            throw new Exception(ex.getMessage());
         }
     }
     @GetMapping("/registrationNumber/{registrationNumber}")
-    public ResponseEntity<Dentist> findByRegistrationNumber(@PathVariable String registrationNumber){
+    public ResponseEntity<Dentist> findByRegistrationNumber(@PathVariable String registrationNumber) throws Exception{
         logger.info("Call method findByRegistrationNumber() of Class Dentist, params: {" + registrationNumber + "}");
         try{
-
+            Optional<Dentist> DentistLocal = service.findByRegistrationNumber(registrationNumber);
+            if(DentistLocal.isPresent()){
+                return ResponseEntity.ok(DentistLocal.get());
+            }else{
+                logger.error("Call method findByRegistrationNumber() of Class Dentist BadRequestException, params{" + registrationNumber + "}");
+                throw new ResourceNotFoundException("Odontologo no existe con el número de matrícula indicado");
+            }
+        }catch(ResourceNotFoundException ex){
+            throw new Exception(ex.getMessage());
         }catch(Exception ex){
-
-        }
-
-        Optional<Dentist> DentistLocal = service.findByRegistrationNumber(registrationNumber);
-        if(DentistLocal.isPresent()){
-            return ResponseEntity.ok(DentistLocal.get());
-        }else{
-            return ResponseEntity.notFound().build();
+            logger.error("Call method findByRegistrationNumber() of Class Dentist:" + ex.getMessage());
+            throw new Exception(ex.getMessage());
         }
     }
     @PostMapping("/update")
-    public void update(@RequestBody Dentist row){
+    public ResponseEntity<String> update(@RequestBody Dentist row) throws Exception{
         logger.info("Call method update() of Class Dentist, params: {" + row.toString() + "}");
         try{
-
-        }catch(Exception ex){
-
+            Optional<Dentist> selected = service.findById(row.getId());
+            if(selected.isPresent()){
+                logger.warn("Dentist before update {" + selected.toString() + "} - Patient after update{" + row.toString() + "}");
+                service.update(row);
+                return ResponseEntity.ok("Paciente actualizado correctamente" + row.toString());
+            }else{
+                logger.error("Call method update() of Class Dentist BadRequestException, params{" + row.toString() + "}");
+                throw new ResourceNotFoundException("Odontologo no existe con la identificación indicada");
+            }
+        }catch(ResourceNotFoundException ex){
+            throw new Exception(ex.getMessage());
+        }catch (Exception ex){
+            logger.error("Call method update() of Class Dentist:" + ex.getMessage());
+            throw new Exception(ex.getMessage());
         }
-
-        service.update(row);
     }
     @PostMapping("/delete/{id}")
-    public void delete(@PathVariable Long id){
+    public ResponseEntity<String> delete(@PathVariable Long id) throws Exception{
         logger.info("Call method delete() of Class Dentist, params: {" + id + "}");
         try{
-
-        }catch(Exception ex){
-
+            Optional<Dentist> selected = service.findById(id);
+            if(selected.isPresent()){
+                service.delete(id);
+                return ResponseEntity.ok("Odontologo eliminado satisfactoriamente");
+            }else{
+                logger.error("Call method delete() of Class Dentist BadRequestException, params{" + id + "}");
+                throw new ResourceNotFoundException("Odontologo no existe con la identificación indicada");
+            }
+        }catch(ResourceNotFoundException ex){
+            throw new Exception(ex.getMessage());
+        }catch (Exception ex){
+            logger.error("Call method delete() of Class Dentist:" + ex.getMessage());
+            throw new Exception(ex.getMessage());
         }
-
-        service.delete(id);
     }
     
 }

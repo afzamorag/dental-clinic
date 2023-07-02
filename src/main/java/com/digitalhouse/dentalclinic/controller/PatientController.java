@@ -174,13 +174,14 @@ public class PatientController {
     }
 
     @PostMapping("/update")
-    public void update(@RequestBody Patient row) throws Exception{
+    public ResponseEntity<String> update(@RequestBody Patient row) throws Exception{
         logger.info("Call method update() of Class Patient, params: {" + row.toString() + "}");
         try{
             Optional<Patient> selected = service.findById(row.getId());
             if(selected.isPresent()){
                 logger.warn("Patient before update {" + selected.toString() + "} - Patient after update{" + row.toString() + "}");
                 service.update(row);
+                return ResponseEntity.ok("Paciente actualizado correctamente");
             }else{
                 logger.error("Call method update() of Class Patient BadRequestException, params{" + row.toString() + "}");
                 throw new ResourceNotFoundException("Paciente no existe con la identificación indicada");
@@ -194,13 +195,14 @@ public class PatientController {
     }
 
     @PostMapping("/delete/{id}")
-    public void delete(@PathVariable Long id) throws Exception{
+    public ResponseEntity<String> delete(@PathVariable Long id) throws Exception{
         logger.info("Call method delete() of Class Patient, params: {" + id + "}");
         try{
             Optional<Patient> selected = service.findById(id);
             if(selected.isPresent()){
                 logger.warn("Patient to delete, params{id: " + id + "}");
                 service.delete(id);
+                return ResponseEntity.ok("Odontologo eliminado satisfactoriamente");
             }else{
                 logger.error("Call method delete() of Class Patient BadRequestException, params{" + id + "}");
                 throw new ResourceNotFoundException("Paciente no existe con la identificación indicada");
