@@ -1,13 +1,10 @@
 package com.digitalhouse.dentalclinic.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.io.Serializable;
-import java.time.LocalDate;
-import java.util.List;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "turns")
@@ -29,7 +26,7 @@ public class Turn{
     private Dentist dentist;
 
     @Column
-    private LocalDate dateTurn;
+    private LocalDateTime dateTurn;
 
     @Override
     public String toString() {

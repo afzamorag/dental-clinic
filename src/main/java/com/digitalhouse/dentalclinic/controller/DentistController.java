@@ -33,7 +33,7 @@ public class DentistController {
                 throw new ResourceNotFoundException("No existen odontologos registrados en el sistema");
             }
         }catch(ResourceNotFoundException ex){
-            throw new Exception(ex.getMessage());
+            throw new ResourceNotFoundException(ex.getMessage());
         }catch(Exception ex){
             logger.error("Call method findAll() of Class Dentist, Exception: " + ex.getMessage());
             throw new Exception(ex.getMessage());
@@ -156,7 +156,7 @@ public class DentistController {
             if(selected.isPresent()){
                 logger.warn("Dentist before update {" + selected.toString() + "} - Patient after update{" + row.toString() + "}");
                 service.update(row);
-                return ResponseEntity.ok("Paciente actualizado correctamente" + row.toString());
+                return ResponseEntity.ok("Paciente actualizado correctamente");
             }else{
                 logger.error("Call method update() of Class Dentist BadRequestException, params{" + row.toString() + "}");
                 throw new ResourceNotFoundException("Odontologo no existe con la identificación indicada");
