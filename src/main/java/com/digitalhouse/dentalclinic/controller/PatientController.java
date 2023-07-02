@@ -41,15 +41,18 @@ public class PatientController {
     @PostMapping
     public ResponseEntity<Patient> savePatient(@RequestBody Patient row) throws Exception {
         logger.info("Call method savePatient() of Class Patient, params: {" + row.toString() + "}");
-        Optional<Patient> selected = service.findByEmail(row.getEmail());
         try{
+            Optional<Patient> selected = service.findByEmail(row.getEmail());
             if(!selected.isPresent()){
                 return ResponseEntity.ok(service.savePatient(row));
             }else{
                 logger.error("Call method findAll() of Class Patient BadRequestException, params{" + row.toString() + "}");
                 throw new BadRequestException("No se permite el registro de más de un paciente con el mismo correo electrónico");
             }
-        }catch(Exception ex){
+        }catch (BadRequestException ex){
+            throw new BadRequestException(ex.getMessage());
+        }
+        catch(Exception ex){
             logger.error("Call method findAll() of Class Patient:" + ex.getMessage());
             throw new Exception(ex.getMessage());
         }
@@ -66,7 +69,10 @@ public class PatientController {
                 logger.error("Call method findById() of Class Patient BadRequestException, params{" + id + "}");
                 throw new ResourceNotFoundException("Paciente no existe con el id indicado");
             }
-        }catch(Exception ex){
+        }catch(ResourceNotFoundException ex){
+            throw new Exception(ex.getMessage());
+        }
+        catch(Exception ex){
             logger.error("Call method findById() of Class Patient:" + ex.getMessage());
             throw new Exception(ex.getMessage());
         }
@@ -83,6 +89,8 @@ public class PatientController {
                 logger.error("Call method findByEmail() of Class Patient BadRequestException, params{" + email + "}");
                 throw new ResourceNotFoundException("Paciente no existe con el email indicado");
             }
+        }catch(ResourceNotFoundException ex){
+            throw new Exception(ex.getMessage());
         }catch(Exception ex){
             logger.error("Call method findByEmail() of Class Patient:" + ex.getMessage());
             throw new Exception(ex.getMessage());
@@ -100,6 +108,8 @@ public class PatientController {
                 logger.error("Call method findByName() of Class Patient BadRequestException, params{" + name + "}");
                 throw new ResourceNotFoundException("Paciente no existe con el nombre indicado");
             }
+        }catch(ResourceNotFoundException ex){
+            throw new Exception(ex.getMessage());
         }catch(Exception ex){
             logger.error("Call method findByName() of Class Patient:" + ex.getMessage());
             throw new Exception(ex.getMessage());
@@ -117,6 +127,8 @@ public class PatientController {
                 logger.error("Call method findByLastName() of Class Patient BadRequestException, params{" + lastName + "}");
                 throw new ResourceNotFoundException("Paciente no existe con el apellido indicado");
             }
+        }catch(ResourceNotFoundException ex){
+            throw new Exception(ex.getMessage());
         }catch(Exception ex){
             logger.error("Call method findByLastName() of Class Patient:" + ex.getMessage());
             throw new Exception(ex.getMessage());
@@ -134,6 +146,8 @@ public class PatientController {
                 logger.error("Call method findByNameAndLastName() of Class Patient BadRequestException, params{" + name + ", " + lastName + "}");
                 throw new ResourceNotFoundException("Paciente no existe con el nombre y apellido indicado");
             }
+        }catch(ResourceNotFoundException ex){
+            throw new Exception(ex.getMessage());
         }catch(Exception ex){
             logger.error("Call method findByNameAndLastName() of Class Patient:" + ex.getMessage());
             throw new Exception(ex.getMessage());
@@ -151,6 +165,8 @@ public class PatientController {
                 logger.error("Call method findByIdNumber() of Class Patient BadRequestException, params{" + idNumber + "}");
                 throw new ResourceNotFoundException("Paciente no existe con la identificación indicada");
             }
+        }catch(ResourceNotFoundException ex){
+            throw new Exception(ex.getMessage());
         }catch(Exception ex){
             logger.error("Call method findByIdNumber() of Class Patient:" + ex.getMessage());
             throw new Exception(ex.getMessage());
@@ -169,6 +185,8 @@ public class PatientController {
                 logger.error("Call method update() of Class Patient BadRequestException, params{" + row.toString() + "}");
                 throw new ResourceNotFoundException("Paciente no existe con la identificación indicada");
             }
+        }catch(ResourceNotFoundException ex){
+            throw new Exception(ex.getMessage());
         }catch (Exception ex){
             logger.error("Call method update() of Class Patient:" + ex.getMessage());
             throw new Exception(ex.getMessage());
@@ -177,7 +195,7 @@ public class PatientController {
 
     @PostMapping("/delete/{id}")
     public void delete(@PathVariable Long id) throws Exception{
-        logger.info("Call method update() of Class delete, params: {" + id + "}");
+        logger.info("Call method delete() of Class Patient, params: {" + id + "}");
         try{
             Optional<Patient> selected = service.findById(id);
             if(selected.isPresent()){
@@ -187,6 +205,8 @@ public class PatientController {
                 logger.error("Call method delete() of Class Patient BadRequestException, params{" + id + "}");
                 throw new ResourceNotFoundException("Paciente no existe con la identificación indicada");
             }
+        }catch(ResourceNotFoundException ex){
+            throw new Exception(ex.getMessage());
         }catch (Exception ex){
             logger.error("Call method delete() of Class Patient:" + ex.getMessage());
             throw new Exception(ex.getMessage());
