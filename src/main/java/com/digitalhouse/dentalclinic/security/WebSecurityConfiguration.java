@@ -38,8 +38,10 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/dentist.html").hasAnyRole("ROLER_USER", "ROLER_ADMIN") /*Para varios roles*/
-                .antMatchers("/pacient.html").hasRole("ROLER_USER")/*Un solo role*/
+                .antMatchers("/getDentist/getDentist.html", "/getPatient/getPatient.html", "/postDentist/postDentist.html", "/postPatient/postPatient.html")
+                .hasRole("ADMIN") /*Para varios roles*/
+                .antMatchers("/registerNewAppointment/registrNewAppointment.html")
+                .hasRole("USER")/*Un solo role*/
                 .anyRequest()
                 .authenticated()
                 .and()

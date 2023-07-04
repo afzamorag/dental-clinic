@@ -15,7 +15,7 @@ import java.util.List;
 @Getter
 @Setter
 
-public class Dentist implements Serializable {
+public class Dentist{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

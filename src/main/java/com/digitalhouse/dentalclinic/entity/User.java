@@ -30,6 +30,9 @@ public class User implements UserDetails {
     @Column
     private UserRole userRole;
 
+    public User() {
+    }
+
     public User(String name, String userName, String email, String password, UserRole userRole) {
         this.name = name;
         this.userName = userName;
@@ -42,6 +45,19 @@ public class User implements UserDetails {
     public Collection<? extends GrantedAuthority> getAuthorities() {
         SimpleGrantedAuthority grantedAuthority = new SimpleGrantedAuthority(this.userRole.name());
         return Collections.singletonList(grantedAuthority);
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", userName='" + userName + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", userRole=" + userRole +
+                ", userRole=" + userRole.name() +
+                '}';
     }
 
     @Override
