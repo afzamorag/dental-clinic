@@ -73,3 +73,264 @@
 [2023-07-02 16:57:55] [ INFO ] [Turn:92] Call method findTurnByDentist() of Class Turn, params: {PYT54321}
 [2023-07-02 16:57:58] [ INFO ] [Turn:92] Call method findTurnByDentist() of Class Turn, params: {PYT543}
 [2023-07-02 16:57:58] [ WARN ] [Turn:98] Call method findTurnByDentist() of Class Turn ResourceNotFoundException
+[2023-07-03 19:03:33] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 19:03:33] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 19:08:08] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='SALOME ISABEL', lastName='ZAMORA LEON', idNumber='998763PH', dateRegister=2021-06-20, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@2ab541d8, email='si.zamoral@gmail.com'}}
+[2023-07-03 19:08:24] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 19:10:37] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='MARIA', lastName='HERNANDEZ', idNumber='108633388', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@7d8a810e, email='marie@gmail.com'}}
+[2023-07-03 19:10:42] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 19:23:26] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 19:23:26] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 19:23:28] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 19:23:28] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 19:23:39] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='MARIA', lastName='HERNANDEZ', idNumber='108633388', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@595480f3, email='marie@gmail.com'}}
+[2023-07-03 19:23:46] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 19:25:32] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='MARIA', lastName='HERNANDEZ', idNumber='108633388', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@314d1d28, email='marie@gmail.com'}}
+[2023-07-03 19:25:36] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 19:25:41] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 19:26:14] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='JHON', lastName='SOSA', idNumber='1234', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@24485657, email='marie@gmail.com'}}
+[2023-07-03 19:26:14] [ ERROR] [PatientService:49] Call method findAll() of Class Patient BadRequestException, params{Patient{id=null, name='JHON', lastName='SOSA', idNumber='1234', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@24485657, email='marie@gmail.com'}}
+[2023-07-03 19:26:25] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='JHON', lastName='SOSA', idNumber='1234', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@53d4d2f7, email='jhon@gmail.com'}}
+[2023-07-03 19:26:29] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 19:26:34] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 19:27:48] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 19:28:19] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 19:28:19] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 19:28:25] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='JHON', lastName='SOSA', idNumber='1234', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@479f71f1, email='jhon@gmail.com'}}
+[2023-07-03 19:28:51] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='ANDRES', lastName='ZAMORA', idNumber='1234', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@1769af04, email='andres@gmail.com'}}
+[2023-07-03 19:28:53] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 19:28:59] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 19:33:59] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:34:00] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 19:36:15] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=1, registrationNumber='12345', name='Juan', lastName='Perez'}}
+[2023-07-03 19:36:25] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:40:30] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=1, registrationNumber='12345', name='Juan', lastName='Perez'}}
+[2023-07-03 19:40:33] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:40:48] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='3456', name='Carlos', lastName='Gonzales'}}
+[2023-07-03 19:40:50] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:41:06] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 19:41:06] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 19:41:09] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:41:17] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:41:20] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='3456', name='Carlos', lastName='Gonzales'}}
+[2023-07-03 19:41:20] [ ERROR] [DentistService:50] Call method findAll() of Class Dentist BadRequestException, params{Dentist{id=2, registrationNumber='3456', name='Carlos', lastName='Gonzales'}}
+[2023-07-03 19:41:29] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='6754', name='Carlos', lastName='Gonzales'}}
+[2023-07-03 19:41:30] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:41:38] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:43:20] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:43:20] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 19:43:27] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:43:27] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 19:43:31] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='6754', name='Carlos', lastName='Gonzales'}}
+[2023-07-03 19:43:43] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=1, registrationNumber='1234', name='Juan', lastName='Perez'}}
+[2023-07-03 19:43:45] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:44:03] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='4567', name='Carlos', lastName='Gonzales'}}
+[2023-07-03 19:44:06] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:44:19] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:46:18] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:46:18] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 19:46:24] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:46:24] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 19:46:27] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 19:46:27] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 19:46:40] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=1, registrationNumber='1234', name='Carlos', lastName='Gonzales'}}
+[2023-07-03 19:46:56] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 19:46:59] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:47:05] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 19:47:05] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 19:47:09] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:53:46] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:53:46] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 19:53:49] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:53:49] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 19:53:56] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:53:56] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 19:56:12] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 19:56:15] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:59:50] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 19:59:50] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 20:03:24] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 20:03:24] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 20:04:06] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 20:04:06] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 20:04:10] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 20:04:14] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 20:04:48] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 20:05:08] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 20:06:25] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 20:08:28] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 20:08:28] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 20:14:17] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 20:14:17] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 20:17:12] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 20:17:26] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=null, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 20:17:26] [ ERROR] [DentistService:50] Call method findAll() of Class Dentist BadRequestException, params{Dentist{id=null, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 20:27:39] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 20:27:40] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 20:27:53] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 20:27:53] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 20:27:57] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='ANDRES', lastName='ZAMORA', idNumber='1234', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@7abf1742, email='andres@gmail.com'}}
+[2023-07-03 20:28:04] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 20:28:04] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 20:28:10] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 20:28:12] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 20:28:20] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 20:28:36] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=3, registrationNumber='null', name='Maria Elisa', lastName='Hernandez Martinez'}}
+[2023-07-03 20:28:36] [ ERROR] [DentistService:56] Call method findAll() of Class Dentist:not-null property references a null or transient value : com.digitalhouse.dentalclinic.entity.Dentist.registrationNumber; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.digitalhouse.dentalclinic.entity.Dentist.registrationNumber
+[2023-07-03 20:28:50] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 20:29:07] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=10, registrationNumber='null', name='Maria Elisa', lastName='Hernandez Martinez'}}
+[2023-07-03 20:29:07] [ ERROR] [DentistService:56] Call method findAll() of Class Dentist:not-null property references a null or transient value : com.digitalhouse.dentalclinic.entity.Dentist.registrationNumber; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.digitalhouse.dentalclinic.entity.Dentist.registrationNumber
+[2023-07-03 20:30:03] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=6, registrationNumber='null', name='Maria Elisa', lastName='Hernandez Martinez'}}
+[2023-07-03 20:30:03] [ ERROR] [DentistService:56] Call method findAll() of Class Dentist:not-null property references a null or transient value : com.digitalhouse.dentalclinic.entity.Dentist.registrationNumber; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.digitalhouse.dentalclinic.entity.Dentist.registrationNumber
+[2023-07-03 20:30:30] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 20:30:35] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 20:30:35] [ ERROR] [DentistService:50] Call method findAll() of Class Dentist BadRequestException, params{Dentist{id=2, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 20:33:00] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=3, registrationNumber='null', name='Maria Elisa', lastName='Hernandez Martinez'}}
+[2023-07-03 20:33:00] [ ERROR] [DentistService:56] Call method findAll() of Class Dentist:not-null property references a null or transient value : com.digitalhouse.dentalclinic.entity.Dentist.registrationNumber; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.digitalhouse.dentalclinic.entity.Dentist.registrationNumber
+[2023-07-03 20:36:14] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='null', name='Maria Elisa', lastName='Hernandez Martinez'}}
+[2023-07-03 20:36:14] [ ERROR] [DentistService:56] Call method findAll() of Class Dentist:not-null property references a null or transient value : com.digitalhouse.dentalclinic.entity.Dentist.registrationNumber; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.digitalhouse.dentalclinic.entity.Dentist.registrationNumber
+[2023-07-03 20:36:54] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 20:38:38] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=6, registrationNumber='7', name='Maria Elisa', lastName='Hernandez Martinez'}}
+[2023-07-03 20:38:51] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 20:49:29] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 20:49:30] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 21:05:26] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='ANDRES', lastName='ZAMORA', idNumber='1234', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@c186ecd, email='andres@gmail.com'}}
+[2023-07-03 21:08:44] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=5, name='Maria Elisa', lastName='Hernandez Martinez', idNumber='467', dateRegister=2023-07-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@5d5b6931, email='mariaelisa004@hotmail.com'}}
+[2023-07-03 21:08:55] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 21:20:30] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 21:20:30] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 21:23:55] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=5, name='Maria Elisa', lastName='Hernandez Martinez', idNumber='1086361353', dateRegister=2023-07-05, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@7563f2e6, email='mariaelisa004@hotmail.com'}}
+[2023-07-03 21:24:05] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:09:26] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:09:26] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:09:26] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 22:09:26] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:09:57] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 22:10:03] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='ANDRES', lastName='ZAMORA', idNumber='1234', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@67f4f547, email='andres@gmail.com'}}
+[2023-07-03 22:10:10] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:10:10] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:10:22] [ INFO ] [Turn:37] Call method saveTurn() of Class Turn, params: {Turn{id=null, patient=Patient{id=1, name='null', lastName='null', idNumber='null', dateRegister=null, homeAddress=null, email='null'}, dentist=Dentist{id=1, registrationNumber='null', name='null', lastName='null'}, dateTurn=2023-07-05T11:11}}
+[2023-07-03 22:11:22] [ INFO ] [Turn:56] Call method findAll() of Class Turn, params: {}
+[2023-07-03 22:15:55] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:15:55] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:15:55] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 22:15:55] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:16:03] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 22:16:06] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='ANDRES', lastName='ZAMORA', idNumber='1234', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@31f92bfe, email='andres@gmail.com'}}
+[2023-07-03 22:16:09] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:16:09] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:16:17] [ INFO ] [Turn:37] Call method saveTurn() of Class Turn, params: {Turn{id=null, patient=Patient{id=1, name='null', lastName='null', idNumber='null', dateRegister=null, homeAddress=null, email='null'}, dentist=Dentist{id=1, registrationNumber='null', name='null', lastName='null'}, dateTurn=2023-07-04T12:17}}
+[2023-07-03 22:18:08] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:18:08] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:18:08] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 22:18:08] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:18:13] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='ANDRES', lastName='ZAMORA', idNumber='1234', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@4f0a7f0f, email='andres@gmail.com'}}
+[2023-07-03 22:18:15] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 22:18:19] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:18:19] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:18:35] [ INFO ] [Turn:37] Call method saveTurn() of Class Turn, params: {Turn{id=null, patient=Patient{id=1, name='null', lastName='null', idNumber='null', dateRegister=null, homeAddress=null, email='null'}, dentist=Dentist{id=1, registrationNumber='null', name='null', lastName='null'}, dateTurn=2023-07-05T10:18}}
+[2023-07-03 22:21:00] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:21:00] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:21:00] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 22:21:00] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:21:03] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 22:21:05] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='ANDRES', lastName='ZAMORA', idNumber='1234', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@440f62be, email='andres@gmail.com'}}
+[2023-07-03 22:21:10] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:21:10] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:21:17] [ INFO ] [Turn:37] Call method saveTurn() of Class Turn, params: {Turn{id=null, patient=Patient{id=1, name='null', lastName='null', idNumber='null', dateRegister=null, homeAddress=null, email='null'}, dentist=Dentist{id=1, registrationNumber='null', name='null', lastName='null'}, dateTurn=2023-07-03T10:21}}
+[2023-07-03 22:21:33] [ INFO ] [Turn:56] Call method findAll() of Class Turn, params: {}
+[2023-07-03 22:23:25] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:23:25] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:23:25] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 22:23:25] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:23:30] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 22:23:32] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='ANDRES', lastName='ZAMORA', idNumber='1234', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@9ede344, email='andres@gmail.com'}}
+[2023-07-03 22:23:35] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:23:35] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:23:42] [ INFO ] [Turn:37] Call method saveTurn() of Class Turn, params: {Turn{id=null, patient=Patient{id=1, name='null', lastName='null', idNumber='null', dateRegister=null, homeAddress=null, email='null'}, dentist=Dentist{id=1, registrationNumber='null', name='null', lastName='null'}, dateTurn=2023-07-03T10:23}}
+[2023-07-03 22:24:34] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:24:34] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:24:34] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 22:24:34] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:24:48] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='ANDRES', lastName='ZAMORA', idNumber='1234', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@31d84d32, email='andres@gmail.com'}}
+[2023-07-03 22:24:50] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 22:24:54] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:24:54] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:24:58] [ INFO ] [Turn:37] Call method saveTurn() of Class Turn, params: {Turn{id=null, patient=Patient{id=1, name='null', lastName='null', idNumber='null', dateRegister=null, homeAddress=null, email='null'}, dentist=Dentist{id=1, registrationNumber='null', name='null', lastName='null'}, dateTurn=2023-07-03T10:24}}
+[2023-07-03 22:25:42] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:25:42] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:25:42] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:25:42] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 22:25:44] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 22:25:46] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='ANDRES', lastName='ZAMORA', idNumber='1234', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@75bcfb36, email='andres@gmail.com'}}
+[2023-07-03 22:25:50] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:25:50] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:26:01] [ INFO ] [Turn:37] Call method saveTurn() of Class Turn, params: {Turn{id=null, patient=Patient{id=1, name='null', lastName='null', idNumber='null', dateRegister=null, homeAddress=null, email='null'}, dentist=Dentist{id=1, registrationNumber='null', name='null', lastName='null'}, dateTurn=2023-07-03T10:25}}
+[2023-07-03 22:28:35] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:28:35] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:28:35] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:28:35] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 22:28:38] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='ANDRES', lastName='ZAMORA', idNumber='1234', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@1b84dc8f, email='andres@gmail.com'}}
+[2023-07-03 22:28:40] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 22:28:43] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:28:43] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:28:54] [ INFO ] [Turn:37] Call method saveTurn() of Class Turn, params: {Turn{id=null, patient=Patient{id=1, name='null', lastName='null', idNumber='null', dateRegister=null, homeAddress=null, email='null'}, dentist=Dentist{id=1, registrationNumber='null', name='null', lastName='null'}, dateTurn=2023-07-03T10:28}}
+[2023-07-03 22:29:52] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:29:52] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:29:53] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 22:29:53] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:29:55] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='4567', name='Diego', lastName='Perez'}}
+[2023-07-03 22:30:05] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='5644', name='Carlos', lastName='Perez'}}
+[2023-07-03 22:30:20] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='CARMEN', lastName='ZAMORA', idNumber='1233334', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@49f28b94, email='andres@gmail.com'}}
+[2023-07-03 22:30:31] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='OSCAR', lastName='VELASCO', idNumber='1233SSS334', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@4fc7a8e6, email='andres@gmail.com'}}
+[2023-07-03 22:30:31] [ ERROR] [PatientService:49] Call method findAll() of Class Patient BadRequestException, params{Patient{id=null, name='OSCAR', lastName='VELASCO', idNumber='1233SSS334', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@4fc7a8e6, email='andres@gmail.com'}}
+[2023-07-03 22:30:42] [ INFO ] [PatientService:43] Call method savePatient() of Class Patient, params: {Patient{id=null, name='OSCAR', lastName='VELASCO', idNumber='1233SSS334', dateRegister=2021-04-04, homeAddress=com.digitalhouse.dentalclinic.entity.HomeAddress@32dc8dab, email='anaaares@gmail.com'}}
+[2023-07-03 22:30:46] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:30:46] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:31:23] [ INFO ] [Turn:37] Call method saveTurn() of Class Turn, params: {Turn{id=null, patient=Patient{id=1, name='null', lastName='null', idNumber='null', dateRegister=null, homeAddress=null, email='null'}, dentist=Dentist{id=1, registrationNumber='null', name='null', lastName='null'}, dateTurn=2023-07-03T10:31}}
+[2023-07-03 22:38:59] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:38:59] [ INFO ] [PatientService:25] Call method findAll() of Class Patient, params: {}
+[2023-07-03 22:39:00] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:39:00] [ WARN ] [PatientService:31] Call method findAll() of Class Patient ResourceNotFoundException
+[2023-07-03 22:39:09] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:39:09] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:39:14] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='5644', name='Carlos', lastName='Perez'}}
+[2023-07-03 22:39:20] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:39:26] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:39:33] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='5644', name='Carlos', lastName='Perez'}}
+[2023-07-03 22:39:33] [ ERROR] [DentistService:50] Call method findAll() of Class Dentist BadRequestException, params{Dentist{id=2, registrationNumber='5644', name='Carlos', lastName='Perez'}}
+[2023-07-03 22:39:39] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:39:43] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:40:37] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:40:37] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:40:41] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:40:41] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:40:51] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='5644', name='Carlos', lastName='Perez'}}
+[2023-07-03 22:41:06] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='5766644', name='Carla', lastName='Perez'}}
+[2023-07-03 22:41:09] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:41:12] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:41:48] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:42:54] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:42:54] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:42:58] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='5766644', name='Carla', lastName='Perez'}}
+[2023-07-03 22:43:01] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='5788866644', name='Carla', lastName='Perez'}}
+[2023-07-03 22:43:04] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:44:35] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:44:35] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:44:38] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='5788866644', name='Carla', lastName='Perez'}}
+[2023-07-03 22:44:42] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='866644', name='Carla', lastName='Perez'}}
+[2023-07-03 22:44:46] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:46:17] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:46:17] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:46:20] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='866644', name='Carla', lastName='Perez'}}
+[2023-07-03 22:46:24] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='66644', name='Carla', lastName='Perez'}}
+[2023-07-03 22:46:30] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:50:37] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:50:38] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:50:44] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='66644', name='Carla', lastName='Perez'}}
+[2023-07-03 22:50:48] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:54:27] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
+[2023-07-03 22:54:27] [ WARN ] [DentistService:32] Call method findAll() of Class Dentist ResourceNotFoundException
+[2023-07-03 22:54:30] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='66644', name='Carla', lastName='Perez'}}
+[2023-07-03 22:54:36] [ INFO ] [DentistService:44] Call method savePatient() of Class Dentist, params: {Dentist{id=2, registrationNumber='6886644', name='Carla', lastName='Perez'}}
+[2023-07-03 22:54:40] [ INFO ] [DentistService:26] Call method findAll() of Class Dentist, params: {}
