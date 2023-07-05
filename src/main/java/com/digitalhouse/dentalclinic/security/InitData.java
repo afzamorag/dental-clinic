@@ -20,10 +20,10 @@ public class InitData implements ApplicationRunner {
         BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
         String password = "Admin123";
         String encryptedPassword = bCryptPasswordEncoder.encode(password);
-        User user = new User("Administrator", "administrator", "administrator@gmail.com", encryptedPassword, UserRole.ADMIN);
+        User user = new User("Administrator", "administrator", "administrator@gmail.com", encryptedPassword, UserRole.ROLE_ADMIN);
         System.out.println(user.toString());
         userRepository.save(user);
-        user = new User("Patient", "patient", "patient@gmail.com", encryptedPassword, UserRole.USER);
+        user = new User("Patient", "patient", "patient@gmail.com", encryptedPassword, UserRole.ROLE_USER);
         System.out.println(user.toString());
         userRepository.save(user);
     }

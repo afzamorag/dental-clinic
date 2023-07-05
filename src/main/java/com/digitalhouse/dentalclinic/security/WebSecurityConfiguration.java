@@ -40,13 +40,14 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/getDentist/getDentist.html", "/getPatient/getPatient.html", "/postDentist/postDentist.html", "/postPatient/postPatient.html")
                 .hasRole("ADMIN") /*Para varios roles*/
-                .antMatchers("/registerNewAppointment/registrNewAppointment.html")
+                .antMatchers("/registerNewAppointment/registerNewAppointment.html")
                 .hasRole("USER")/*Un solo role*/
                 .anyRequest()
                 .authenticated()
                 .and()
                 .formLogin()
                 .and()
-                .logout();
+                .logout()
+                .and().exceptionHandling().accessDeniedPage("/accessdenied.html");
     }
 }
